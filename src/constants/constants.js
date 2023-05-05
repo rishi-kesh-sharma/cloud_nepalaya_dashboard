@@ -1,1 +1,1 @@
-export const BASE_URL = "http://api.cloudnepalaya.com:4000/api";
+export const BASE_URL = "https://apicloud.apptechnologies.co/api";
