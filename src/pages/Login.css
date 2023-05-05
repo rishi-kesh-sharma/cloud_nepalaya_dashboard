@@ -1,0 +1,100 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap"); */
+
+body {
+  /* background: linear-gradient(90deg, #ded8d8 0%, #7e3e47 100%); */
+  background-color: rgb(243, 243, 245);
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+.login {
+  border-radius: 10px;
+
+  width: 360px;
+  /* padding: 8% 0 0; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.login .form {
+  box-shadow: rgb(209, 209, 209) 5px 5px 10px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  max-width: 360px;
+  padding: 45px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.login .form input {
+  outline: 0;
+  background: #f9f8f8;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid rgb(223, 222, 222);
+  color: gray;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.login .form input:focus {
+  /* background: #e8e5e5; */
+}
+
+.login .form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #316eff;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  -moz-transition: all 0.3 ease;
+  -ms-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+}
+.login .form button:hover {
+  background-color: white;
+  color: #316eff;
+  border: 1px solid #316eff;
+}
+
+.login .form button:active {
+  background: #395591;
+}
+
+.login .form span {
+  font-size: 40px;
+  color: #4b6cb7;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.login .form p.error {
+  text-align: left;
+  font-size: 0.8rem;
+  color: red;
+}
