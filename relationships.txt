@@ -1,0 +1,6 @@
+relationships
+quotes->services
+faqs->services
+
+if services deleted quote also be deleted
+if services deleted the faq related to that service also should be deleted

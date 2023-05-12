@@ -1,0 +1,10 @@
+export const LOGIN = "LOGIN";
+export const LOGOUT = "LOGOUT";
+export const SET_MISC = "SET_OVERVIEW";
+export const SET_BLOGS = "SET_BLOGS";
+export const SET_CONTACTS = "SET_CONTACTS";
+export const SET_FAQS = "SET_FAQS";
+export const SET_QUOTES = "SET_QUOTES";
+export const SET_SERVICES = "SET_SERVICES";
+export const SET_TESTIMONIALS = "SET_TESTIMONIALS";
+export const SET_USERS = "SET_USERS";
