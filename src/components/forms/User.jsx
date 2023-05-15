@@ -20,7 +20,6 @@ export default function ({ currentId, setOpenModal, mode }) {
 
   let initialValues = {
     username: "",
-    avatar: "",
     email: "",
     role: "admin",
     address: "",
@@ -288,14 +287,18 @@ export default function ({ currentId, setOpenModal, mode }) {
                     Image
                   </label>
 
-                  <Dropzone
-                    name="image"
-                    setFieldValue={setFieldValue}
-                    setImage={setImage}
-                    image={image}
-                    values={values}
-                    mode={mode}
-                  />
+                  {mode == "view" &&
+                    auth?.authenticatedUser?.role == "guest" &&
+                    image?.filePath && (
+                      <Dropzone
+                        name="image"
+                        setFieldValue={setFieldValue}
+                        setImage={setImage}
+                        image={image}
+                        values={values}
+                        mode={mode}
+                      />
+                    )}
                 </div>
 
                 {mode == "create" && (

@@ -16,7 +16,7 @@ const Page = () => {
   return (
     <div className="">
       {openModal ? (
-        <div className="ml-[15rem] mt-[1.7rem] mr-[2rem] xl:ml-[15.5rem] 2xl:ml-[18rem] mb-[3rem]">
+        <div className="ml-[15rem] mt-[1.7rem] mr-[2rem] xl:ml-[15.5rem] 2xl:ml-[18rem] mb-[1.7rem]">
           {/* <KeepMountedModal open={openModal} setOpen={setOpenModal} width={900}> */}
           <Form
             currentId={currentId}

@@ -24,7 +24,7 @@ const Page = () => {
   }, []);
   const misc = useSelector((state) => state.misc);
   return (
-    <div className="mt-[1.7rem] ml-[18vw] ">
+    <div className="mt-[1.7rem] ml-[18vw] mb-[1.7rem]">
       <div
         className="cards flex-wrap items xl:ml"
         style={{
@@ -38,12 +38,13 @@ const Page = () => {
         <Card sx={{ minWidth: 275 }} className="bg-gray-200">
           <CardContent className="text-gray-800">
             <Typography
-              variant="h5"
+              className="text-gray-500 "
               sx={{ textAlign: "center" }}
               component="div">
               Total Blogs
             </Typography>
             <Typography
+              variant="h5"
               sx={{ mb: 1.5, mt: "1rem", textAlign: "center" }}
               className="text-gray-800">
               {misc.totalBlogs}
@@ -52,10 +53,13 @@ const Page = () => {
         </Card>
         {/* <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography variant="h5" sx={{ textAlign: "center" }} component="div">
+          <Typography  sx={{ textAlign: "center" }} component="div">
+           className="text-gray-500"
             Total FAQs
           </Typography>
           <Typography
+          
+          variant="h5"
             sx={{ mb: 1.5, mt: "1rem", textAlign: "center" }}
             color="text.secondary">
             {misc.totalFAQs}
@@ -65,12 +69,13 @@ const Page = () => {
         <Card sx={{ minWidth: 275 }} className="bg-gray-200">
           <CardContent className="text-gray-800">
             <Typography
-              variant="h5"
+              className="text-gray-500"
               sx={{ textAlign: "center" }}
               component="div">
               Total Quotes
             </Typography>
             <Typography
+              variant="h5"
               sx={{ mb: 1.5, mt: "1rem", textAlign: "center" }}
               className="text-gray-800">
               {misc.totalQuotes}
@@ -79,10 +84,13 @@ const Page = () => {
         </Card>
         {/* <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography variant="h5" sx={{ textAlign: "center" }} component="div">
+          <Typography  sx={{ textAlign: "center" }} component="div">
+           className="text-gray-500"
             Total Services
           </Typography>
           <Typography
+          
+          variant="h5"
             sx={{ mb: 1.5, mt: "1rem", textAlign: "center" }}
             color="text.secondary">
             {misc.totalServices}
@@ -91,10 +99,13 @@ const Page = () => {
       </Card> */}
         {/* <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography variant="h5" sx={{ textAlign: "center" }} component="div">
+          <Typography  sx={{ textAlign: "center" }} component="div">
+           className="text-gray-500"
             Total Testimonials
           </Typography>
           <Typography
+          
+          variant="h5"
             sx={{ mb: 1.5, mt: "1rem", textAlign: "center" }}
             color="text.secondary">
             {misc.totalTestimonials}
@@ -104,12 +115,13 @@ const Page = () => {
         <Card sx={{ minWidth: 275 }} className="bg-gray-200">
           <CardContent className="text-gray-800">
             <Typography
-              variant="h5"
+              className="text-gray-500"
               sx={{ textAlign: "center" }}
               component="div">
               Total Contacts
             </Typography>
             <Typography
+              variant="h5"
               sx={{ mb: 1.5, mt: "1rem", textAlign: "center" }}
               className="text-gray-800">
               {misc.totalContacts}
@@ -118,10 +130,13 @@ const Page = () => {
         </Card>
         {/* <Card sx={{ minWidth: 275 }}>
         <CardContent>
-          <Typography variant="h5" sx={{ textAlign: "center" }} component="div">
+          <Typography  sx={{ textAlign: "center" }} component="div">
+           className="text-gray-500"
             Team Members
           </Typography>
           <Typography
+          
+          variant="h5"
             sx={{ mb: 1.5, mt: "1rem", textAlign: "center" }}
             color="text.secondary">
             {misc.totalUsers}

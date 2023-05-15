@@ -77,6 +77,7 @@ const Sidebar = ({}) => {
         height: "100vh",
         maxWidth: "25%",
         position: "fixed",
+        left: "-2px",
         paddingTop: "1.7rem",
         background: "#fafafc",
       }}>

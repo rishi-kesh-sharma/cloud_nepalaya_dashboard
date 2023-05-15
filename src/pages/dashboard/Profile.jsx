@@ -16,11 +16,11 @@ const Page = () => {
   const image = auth?.authenticatedUser?.image;
   const username = auth?.authenticatedUser?.username;
   return (
-    <div className="ml-[15rem] xl:ml-[15.5rem] 2xl:ml-[18rem] mb-[3rem]">
+    <div className="ml-[15rem] xl:ml-[15.5rem] 2xl:ml-[18rem] mb-[1.7rem] ">
       <KeepMountedModal open={openModal} setOpen={setOpenModal} width={500}>
         <ChangePasswordForm setOpenModal={setOpenModal} />
       </KeepMountedModal>
-      <div className="grid grid-cols-5 gap-[2rem] py-[3rem] mt-[1.7rem] bg-white min-h-[80vh]  justify-items-center items-start px-[3rem]">
+      <div className="grid grid-cols-5 gap-[2rem] py-[3rem] mt-[1.7rem] bg-white shadow-md min-h-[80vh]  justify-items-center items-start px-[3rem] mr-[2.5rem] rounded-lg shadow-md">
         <div className="col-span-2">
           <img
             className="dropdown rounded-full min-h-[300px] object-contain"

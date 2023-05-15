@@ -64,16 +64,16 @@ const Actions = ({
       <li className="cursor-pointer" onClick={handleView}>
         <HiEye className="text-blue-500" />
       </li>
-      {hasAddFeature && isAuthorized && (
+      {hasAddFeature && (
         <li className="cursor-pointer" onClick={handleEdit}>
           <FaEdit className="text-green-600" />
         </li>
       )}
-      {isAuthorized && (
+      {
         <li className="cursor-pointer" onClick={handleDelete}>
           <FaTrash className="text-red-600" />
         </li>
-      )}
+      }
     </ul>
   );
 };

@@ -11,18 +11,17 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  maxHeight: "70vh",
-  overflow: "auto",
+
   bgcolor: "background.paper",
   boxShadow: 24,
 };
-
 export default function KeepMountedModal({ open, setOpen, children, width }) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <div className="bg-white">
+    <div className="bg-white rounded-lg min-w-[50vw] max-w-[1000px] overflow-auto max-h-[70vh]">
       <Modal
+        className=""
         keepMounted
         open={open}
         onClose={handleClose}
@@ -30,12 +29,14 @@ export default function KeepMountedModal({ open, setOpen, children, width }) {
         aria-describedby="keep-mounted-modal-description">
         <Box
           sx={style}
-          className={`min-w-[50vw] max-w-[1000px] bg-white  border border-gray-200 outline-none relative px-[2rem] pt-[2rem] pb-[2rem] xl:pl-[2rem]`}>
-          {children}
+          className={`bg-white  border border-gray-200 outline-none relative pl-[2rem] pt-[2rem] pb-[2rem] xl:pl-[2rem] rounded-lg `}>
           <RxCross1
             onClick={handleClose}
-            className="absolute cursor-pointer text-red-600 text-lg top-[1rem] right-[1rem]"
+            className="absolute cursor-pointer text-red-600 text-lg top-[1rem] right-[2rem]"
           />
+          <div className="max-h-[70vh] overflow-auto min-w-[50vw] pr-[2rem]">
+            {children}
+          </div>
         </Box>
       </Modal>
     </div>

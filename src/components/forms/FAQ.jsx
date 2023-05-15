@@ -32,7 +32,7 @@ export default function ({ currentId, setOpenModal, mode }) {
         type: type,
         question,
         answer,
-        service,
+        service: service || serviceDocuments[0]?.id,
       };
     }
   }
@@ -42,6 +42,7 @@ export default function ({ currentId, setOpenModal, mode }) {
     type: Yup.string().required(),
     service: Yup.string().when("type", {
       is: "Service Related",
+
       then: Yup.string().required("Service  is required."),
     }),
   });
@@ -97,6 +98,7 @@ export default function ({ currentId, setOpenModal, mode }) {
           handleChange,
           handleBlur,
           isSubmitting,
+          setFieldValue,
         }) => (
           <div className="update-blog ">
             <div className=" form " style={{ maxWidth: "100%", padding: 0 }}>
@@ -183,7 +185,7 @@ export default function ({ currentId, setOpenModal, mode }) {
                         name="service"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.service}
+                        value={values?.service || serviceDocuments?._id}
                         placeholder="Enter Related Service"
                         style={{ padding: "10px" }}
                         className="cursor-pointer w-[100%] outline-none rounded-lg border border-gray-400 text-gray-800">

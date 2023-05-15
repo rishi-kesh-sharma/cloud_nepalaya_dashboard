@@ -137,7 +137,7 @@ export default function ({ setOpenModal, mode, setMode }) {
                 <p className="text-blue-500  text-2xl ">Profile</p>
                 <button
                   onClick={toggleMode}
-                  className="bg-blue-500 px-[1rem] text-gray-100 p-[0.5rem] rounded-md flex items-center gap-[0.4rem] ml-auto mr-[4.6rem]">
+                  className="bg-blue-500 px-[1rem] text-gray-100 p-[0.5rem] rounded-md flex items-center gap-[0.4rem] ml-auto mr-[2rem]">
                   {mode == "view" ? "  Edit" : "View Only"}
                 </button>
               </div>
@@ -314,11 +314,11 @@ export default function ({ setOpenModal, mode, setMode }) {
                       </button>
                     )}
                   </div>
-                  <div className="   ml-auto pr-[4.6rem]">
+                  <div className="   ml-auto pr-[2rem]">
                     {mode !== "view" && (
                       <div
                         onClick={handleChangePasswordClick}
-                        className="cursor-pointer bg-[#316EFF]  px-[0.5rem]   text-gray-100 text-center py-2 text-lg rounded-md">
+                        className="cursor-pointer bg-[#316EFF]  px-[1rem]  text-gray-100 text-center py-2 text-lg rounded-md">
                         Change Password
                       </div>
                     )}

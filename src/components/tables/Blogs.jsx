@@ -14,7 +14,7 @@ const columns = [
   { id: "text", label: "Text", minWidth: 60 },
   { id: "author", label: "Author", minWidth: 60 },
   { id: "createdAt", label: "CreatedAt", minWidth: 60 },
-  { id: "updatedAt", label: "UpdatedtT", minWidth: 60 },
+  { id: "updatedAt", label: "UpdatedAt", minWidth: 60 },
   { id: "actions", label: "ACTIONS", minWidth: 100 },
 ];
 

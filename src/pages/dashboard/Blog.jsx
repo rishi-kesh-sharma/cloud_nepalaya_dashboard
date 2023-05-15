@@ -16,7 +16,7 @@ const Page = () => {
   return (
     <div className="">
       {openModal ? (
-        <div className="ml-[15rem] xl:[15.5rem] 2xl:ml-[18rem] mt-[1.7rem] mr-[2rem] mb-[3rem]">
+        <div className="ml-[15rem] xl:[15.5rem] 2xl:ml-[18rem] mt-[1.7rem] mr-[2rem] mb-[1.7rem]">
           <Form
             currentId={currentId}
             setOpenModal={setOpenModal}

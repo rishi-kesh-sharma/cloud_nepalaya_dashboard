@@ -128,7 +128,7 @@ export default function ({ currentId, setOpenModal, mode }) {
           isSubmitting,
           setFieldValue,
         }) => (
-          <div className="bg-white mt-[1rem] p-[2rem]">
+          <div className="bg-white mt-[1rem] p-[2rem] rounded-lg shadow-md">
             <div className=" form " style={{ maxWidth: "100%", padding: 0 }}>
               <p className="text-blue-500  text-2xl mb-[2rem]">Service</p>
 
