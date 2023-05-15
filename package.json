@@ -32,6 +32,7 @@
     "react-topbar-progress-indicator": "^4.1.1",
     "redux": "^4.2.1",
     "styled-components": "^5.3.6",
+    "sweetalert2": "^11.7.5",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
