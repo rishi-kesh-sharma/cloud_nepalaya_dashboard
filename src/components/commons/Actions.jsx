@@ -62,6 +62,7 @@ const Actions = ({
   return (
     <ul className="flex gap-[0.8rem] text-xl">
       <li className="cursor-pointer" onClick={handleView}>
+        k
         <HiEye className="text-blue-500" />
       </li>
       {hasAddFeature && (
