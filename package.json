@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "apexcharts": "^3.40.0",
     "axios": "^1.2.2",
+    "dotenv": "^16.0.3",
     "formik": "^2.2.9",
     "formik-persist": "^1.1.0",
     "froala-editor": "^4.0.18",

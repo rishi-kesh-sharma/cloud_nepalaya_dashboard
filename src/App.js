@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Provider as ReduxProvider } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { createStore } from "redux";
 import { legacy_createStore as createStore } from "redux";
 
 import rootReducer from "./reducers/root";

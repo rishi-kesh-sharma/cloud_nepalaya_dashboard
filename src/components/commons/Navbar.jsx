@@ -100,7 +100,7 @@ const Navbar = () => {
                 className="dropdown h-8 w-8 rounded-full"
                 src={
                   auth?.authenticatedUser?.image?.filePath
-                    ? `http://localhost:4000${auth?.authenticatedUser?.image?.filePath}/${auth?.authenticatedUser?.image?.fileName}`
+                    ? `${process.env.REACT_APP_SERVER_BASE_URL}${auth?.authenticatedUser?.image?.filePath}/${auth?.authenticatedUser?.image?.fileName}`
                     : `https://ui-avatars.com/api/?length=1&rounded=true&background=random&name=${auth?.authenticatedUser?.username}`
                 }
                 alt="admin"

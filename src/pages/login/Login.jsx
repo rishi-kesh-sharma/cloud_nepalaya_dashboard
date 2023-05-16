@@ -18,6 +18,7 @@ const schema = Yup.object().shape({
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  console.log(process.env.REACT_APP_SERVER_BASE_URL);
   useEffect(() => {
     const checkAuthentication = async () => {
       const response = await checkTokenValidity();

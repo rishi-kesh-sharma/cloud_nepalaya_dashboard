@@ -1,12 +1,14 @@
 import axios from "axios";
-import { BASE_URL } from "../constants/constants";
 
 export const loginUser = async ({ email, password }) => {
   try {
-    const response = await axios.post(`${BASE_URL}/auth/login`, {
-      email,
-      password,
-    });
+    const response = await axios.post(
+      `${process.env.REACT_APP_SERVER_BASE_URL}/auth/login`,
+      {
+        email,
+        password,
+      }
+    );
     return response;
   } catch (err) {
     return err.response;
@@ -15,11 +17,14 @@ export const loginUser = async ({ email, password }) => {
 export const logoutUser = async () => {
   //   console.log(localStorage.getItem("token"));
   try {
-    const response = await axios.get(`${BASE_URL}/auth/logout`, {
-      headers: {
-        "auth-token": localStorage.getItem("auth-token"),
-      },
-    });
+    const response = await axios.get(
+      `${process.env.REACT_APP_SERVER_BASE_URL}/auth/logout`,
+      {
+        headers: {
+          "auth-token": localStorage.getItem("auth-token"),
+        },
+      }
+    );
     return response;
   } catch (err) {
     console.log(err);
@@ -31,11 +36,14 @@ export const checkTokenValidity = async () => {
   if (!authToken) return { isValid: false, user: {} };
 
   try {
-    const response = await axios.get(`${BASE_URL}/auth/isTokenValid`, {
-      headers: {
-        "auth-token": authToken,
-      },
-    });
+    const response = await axios.get(
+      `${process.env.REACT_APP_SERVER_BASE_URL}/auth/isTokenValid`,
+      {
+        headers: {
+          "auth-token": authToken,
+        },
+      }
+    );
     return { isValid: true, user: response.data.user };
     // return response;
   } catch (err) {

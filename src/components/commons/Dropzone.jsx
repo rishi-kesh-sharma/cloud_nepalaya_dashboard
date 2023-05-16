@@ -45,7 +45,7 @@ export default function ({
           <div className="h-full">
             <img
               className="h-[200px] w-full object-contain  rounded-md"
-              src={`http://localhost:4000${image?.filePath}/${image?.fileName}`}
+              src={`${process.env.REACT_APP_SERVER_BASE_URL}${image?.filePath}/${image?.fileName}`}
             />
           </div>
         )}

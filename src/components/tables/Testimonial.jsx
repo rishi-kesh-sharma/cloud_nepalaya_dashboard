@@ -37,7 +37,7 @@ function createData(
         className="h-8 w-8 rounded-full object-fill"
         src={
           image?.filePath
-            ? `http://localhost:4000${image?.filePath}/${image?.fileName}`
+            ? `${process.env.REACT_APP_SERVER_BASE_URL}${image?.filePath}/${image?.fileName}`
             : `https://ui-avatars.com/api/?length=1&rounded=true&background=random&name=${reviewer}`
         }
       />
